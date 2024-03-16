@@ -11,7 +11,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon TAILWIND_MODE=watch src/server.js",
+    "dev": "nodemon src/server.js",
     "watch": "npx tailwindcss -i src/input.css -o src/output.css -w"
   },
   "author": "",
