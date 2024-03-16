@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bon Appétit</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="icon" type="image/x-icon" href="favvv.png">
@@ -65,8 +65,8 @@
                             <a href="#" class="font-medium text-orange-600 hover:text-orange-400 transition-all">Laura</a>
                         </div>
                         <div class="stats">
-                            <span class="text-gray-500">2k</span> <i class="heart fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe()"></i>
-                            <span class="text-gray-500">5k</span> <i class="bookmark fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe()"></i>
+                            <span class="text-gray-500">2k</span> <i class="heart fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe(this)"></i>
+                            <span class="text-gray-500">5k</span> <i class="bookmark fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe(this)"></i>
                         </div>
                     </div>
                 </div>
@@ -87,8 +87,8 @@
                             <a href="#" class="font-medium text-orange-600 hover:text-orange-400 transition-all">Laura</a>
                         </div>
                         <div class="stats">
-                            <span class="text-gray-500">2k</span> <i class="heart active fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe()"></i>
-                            <span class="text-gray-500">5k</span> <i class="bookmark fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe()"></i>
+                            <span class="text-gray-500">2k</span> <i class="heart active fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500 z-30" onclick="likeRecipe(this)"></i>
+                            <span class="text-gray-500">5k</span> <i class="bookmark fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe(this)"></i>
                         </div>
                     </div>
                 </div>
@@ -109,8 +109,8 @@
                             <a href="#" class="font-medium text-orange-600 hover:text-orange-400 transition-all">Laura</a>
                         </div>
                         <div class="stats">
-                            <span class="text-gray-500">2k</span> <i class="heart fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe()"></i>
-                            <span class="text-gray-500">5k</span> <i class="bookmark active fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe()"></i>
+                            <span class="text-gray-500">2k</span> <i class="heart fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe(this)"></i>
+                            <span class="text-gray-500">5k</span> <i class="bookmark active fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe(this)"></i>
                         </div>
                     </div>
                 </div>
@@ -131,8 +131,8 @@
                             <a href="#" class="font-medium text-orange-600 hover:text-orange-400 transition-all">Laura</a>
                         </div>
                         <div class="stats">
-                            <span class="text-gray-500">2k</span> <i class="heart fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe()"></i>
-                            <span class="text-gray-500">5k</span> <i class="bookmark fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe()"></i>
+                            <span class="text-gray-500">2k</span> <i class="heart fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe(this)"></i>
+                            <span class="text-gray-500">5k</span> <i class="bookmark fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe(this)"></i>
                         </div>
                     </div>
                 </div>
@@ -271,16 +271,6 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript">
-        function likeRecipe(){
-            var target = event.target || event.srcElement;
-            event.target.classList.toggle('active');
-        }
-
-        function bookmarkRecipe(){
-            var target = event.target || event.srcElement;
-            event.target.classList.toggle('active');
-        }
-    </script>
+    <script src="custom.js"></script>
 </body>
 </html>

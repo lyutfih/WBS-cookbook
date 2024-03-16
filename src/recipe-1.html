@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe 1</title>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="icon" type="image/x-icon" href="favvv.png">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'indigo-1000': '#382C52',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="m-0 p-0 box-border">
+    <div class="py-5 lg:px-24 md:px-10 sm:px-5">
+        <div class="navbar flex justify-between items-center">
+            <div class="brand inline-flex">
+                <div class="w-8 h-8 bg-indigo-1000 text-zinc-50 font-bold rounded-md py-1 px-1 mr-2" style="padding-left: 0.3rem;">BA</div> <a href="" class="text-2xl text-indigo-1000 font-bold">Bon Appétit</a>
+            </div>
+            <div class="right-menu flex justify-normal items-center gap-5">
+                <div class="search">
+                    <input type="text" placeholder="Search Recipe.." class="py-2 px-4 bg-zinc-50 border border-gray-400 text-orange-600 rounded-full font-sm text-sm">
+                 </div>
+                <div class="btn-share">
+                    <button class="py-2 px-5 border border-orange-600 text-orange-600 rounded-full font-bold text-sm transition-all hover:bg-orange-600 hover:text-white">Share Recipe</button>
+                </div>
+                <div class="img-profile">
+                    <img class="h-10 w-10 rounded-full cursor-pointer" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb mt-10 py-5 lg:px-24 md:px-10 sm:px-5 text-gray-500">
+        <a href=""><i class="fa-solid fa-home text-gray-500 text-sm"></i> Home </a>
+        /
+        <a href=""><i class="fa-solid fa-clipboard-list text-gray-500 text-sm"></i> Recipes </a>
+        /
+        <a href=""><i class="fa-solid fa-cake-candles text-gray-500 text-sm"></i> Desserts </a>
+    </div>
+    <main class="mt-5 py-5 lg:px-24 md:px-10 sm:px-5">
+        <div class="recipe-head flex justify-start gap-10">
+            <div class="recipe-image">
+                <img class="max-w-44 h-96 object-cover rounded-lg brightness-75 hover:brightness-100 transition-all" src="https://www.kindernetz.de/sendungen/schmecksplosion/1605000762801%2Cimage-knet-2538~_v-1x1@2dL_-029cdd853d61a51824ed2ee643deeae504b065c1.jpg" />
+            </div>
+            <div class="recipe-details">
+                <span class="text-3xl mr-5 font-semibold">Hamburger</span> <span class="font-medium text-l">4.6/5 <i class="fa-solid fa-star text-orange-600 text-l mr-1"></i></span> <span class="text-gray-500 text-sm">22 ratings</span>
+                <p class="text-gray-500 mt-5">What's better than a bla bla bla bla bla bla bla bla</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
