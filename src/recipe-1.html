@@ -21,17 +21,18 @@
       </script>
 </head>
 <body class="m-0 p-0 box-border">
-    <div class="py-5 lg:px-24 md:px-10 sm:px-5">
+    <div class="py-5 lg:px-24 md:px-10 sm:px-5 max-sm:px-5">
         <div class="navbar flex justify-between items-center">
             <div class="brand inline-flex">
                 <div class="w-8 h-8 bg-indigo-1000 text-zinc-50 font-bold rounded-md py-1 px-1 mr-2" style="padding-left: 0.3rem;">BA</div> <a href="" class="text-2xl text-indigo-1000 font-bold">Bon Appétit</a>
             </div>
             <div class="right-menu flex justify-normal items-center gap-5">
                 <div class="search">
-                    <input type="text" placeholder="Search Recipe.." class="py-2 px-4 bg-zinc-50 border border-gray-400 text-orange-600 rounded-full font-sm text-sm">
+                    <input type="text" placeholder="Search Recipe.." class="py-2 px-4 bg-zinc-50 border border-gray-400 text-orange-600 rounded-full font-sm text-sm max-sm:hidden">
                  </div>
                 <div class="btn-share">
-                    <button class="py-2 px-5 border border-orange-600 text-orange-600 rounded-full font-bold text-sm transition-all hover:bg-orange-600 hover:text-white">Share Recipe</button>
+                    <button class="py-2 px-5 border border-orange-600 text-orange-600 rounded-full font-bold text-sm transition-all hover:bg-orange-600 hover:text-white max-sm:hidden sm:hidden md:block lg:block">Share Recipe</button>
+                    <button class="block py-2 px-5 bg-orange-600 text-zinc-50 rounded-full font-bold text-sm hover:bg-orange-400 transition-all lg:hidden md:hidden sm:block">+</button>
                 </div>
                 <div class="img-profile">
                     <img class="h-10 w-10 rounded-full cursor-pointer" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
@@ -39,21 +40,39 @@
             </div>
         </div>
     </div>
-    <div class="breadcrumb mt-10 py-5 lg:px-24 md:px-10 sm:px-5 text-gray-500">
+    <div class="breadcrumb mt-10 py-5 lg:px-24 md:px-10 sm:px-5 text-gray-500 max-sm:px-5">
         <a href=""><i class="fa-solid fa-home text-gray-500 text-sm"></i> Home </a>
         /
         <a href=""><i class="fa-solid fa-clipboard-list text-gray-500 text-sm"></i> Recipes </a>
         /
         <a href=""><i class="fa-solid fa-cake-candles text-gray-500 text-sm"></i> Desserts </a>
     </div>
-    <main class="mt-5 py-5 lg:px-24 md:px-10 sm:px-5">
-        <div class="recipe-head flex justify-start gap-10">
-            <div class="recipe-image">
-                <img class="max-w-44 h-96 object-cover rounded-lg brightness-75 hover:brightness-100 transition-all" src="https://www.kindernetz.de/sendungen/schmecksplosion/1605000762801%2Cimage-knet-2538~_v-1x1@2dL_-029cdd853d61a51824ed2ee643deeae504b065c1.jpg" />
+    <main class="mt-5 py-5 lg:px-24 md:px-10 sm:px-5 max-sm:px-5">
+        <div class="recipe-head flex justify-start gap-10 lg:flex-row md:flex-col sm:flex-col max-sm:flex-col">
+            <div class="recipe-image min-w-[60%]">
+                <img class="min-w-full h-96 object-cover rounded-lg brightness-75 hover:brightness-100 transition-all" src="https://www.kindernetz.de/sendungen/schmecksplosion/1605000762801%2Cimage-knet-2538~_v-1x1@2dL_-029cdd853d61a51824ed2ee643deeae504b065c1.jpg" />
             </div>
             <div class="recipe-details">
                 <span class="text-3xl mr-5 font-semibold">Hamburger</span> <span class="font-medium text-l">4.6/5 <i class="fa-solid fa-star text-orange-600 text-l mr-1"></i></span> <span class="text-gray-500 text-sm">22 ratings</span>
-                <p class="text-gray-500 mt-5">What's better than a bla bla bla bla bla bla bla bla</p>
+                <p class="text-gray-500 mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nibh fringilla, sagittis neque vel, dignissim leo. Integer vestibulum tincidunt ultrices. Nulla facilisi. Mauris dignissim neque aliquet risus viverra, ut aliquam lorem vehicula. Curabitur porta metus malesuada erat facilisis imperdiet. Duis et ex aliquam, imperdiet nulla sit amet, faucibus augue. Quisque at velit nec ipsum dapibus dictum quis vitae est.</p>
+                <div class="recipe-stats flex gap-5 justify-center bg-gray-200 px-10 py-5 rounded-md mt-5 lg:flex-row md:flex-row sm:flex-col max-sm:flex-col">
+                    <div class="flex flex-col items-center recipe-test pr-5">
+                        <h6 class="font-semibold">Prep</h6>
+                        <p class="text-gray-400 font-md">25 min</p>
+                    </div>
+                    <div class="flex flex-col items-center recipe-test pr-5">
+                        <h6 class="font-semibold">Cook</h6>
+                        <p class="text-gray-400 font-md">45 min</p>
+                    </div>
+                    <div class="flex flex-col items-center recipe-test pr-5">
+                        <h6 class="font-semibold">Serves</h6>
+                        <p class="text-gray-400 font-md">6</p>
+                    </div>
+                    <div class="flex flex-col items-center recipe-test ">
+                        <h6 class="font-semibold">Calories</h6>
+                        <p class="text-gray-400 font-md">485</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
