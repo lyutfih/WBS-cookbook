@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       colors: {
         'indigo-1000': '#382C52',
+        'snow': '#FFFAFA',
       },
     },
   },

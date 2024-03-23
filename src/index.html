@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link rel="icon" type="image/x-icon" href="favvv.png">
 </head>
-<body class="m-0 p-0 box-border">
-    <div class="header py-5 bg-orange-200 min-h-80 lg:px-24 md:px-10 sm:px-5 max-sm:px-5">
+<body class="m-0 p-0 box-border bg-snow">
+    <div class="header py-5 bg-orange-100 min-h-80 lg:px-24 md:px-10 sm:px-5 max-sm:px-5">
         <div class="navbar flex justify-between items-center">
             <div class="brand inline-flex">
                 <div class="w-8 h-8 bg-indigo-1000 text-zinc-50 font-bold rounded-md py-1 px-1 mr-2" style="padding-left: 0.3rem;">BA</div> <a href="" class="text-2xl text-indigo-1000 font-bold">Bon Appétit</a>
@@ -24,7 +24,7 @@
                     <button class="block py-2 px-5 bg-orange-600 text-zinc-50 rounded-full font-bold text-sm hover:bg-orange-400 transition-all lg:hidden md:hidden sm:block">+</button>
                 </div>
                 <div class="img-profile">
-                    <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                    <img class="h-10 w-10 rounded-full cursor-pointer" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
                 </div>
             </div>
         </div>
@@ -53,7 +53,7 @@
                         <div class="absolute w-10 h-10 bg-yellow-400 text-md text-orange-400 font-bold rounded-br-full pl-1 pt-1 z-10">
                             1st
                         </div>
-                        <span class="absolute py-1 px-3 bg-gray-800 bg-opacity-70 text-zinc-50 text-sm font-bold rounded-full m-3 top-0 right-0 m-2 z-10">4.5 / 5 <i class="fa-solid fa-star text-yellow-400"></i></span>
+                        <span class="absolute py-1 px-3 bg-gray-800 bg-opacity-70 text-zinc-50 text-sm font-bold rounded-full m-3 top-0 right-0 z-10">4.5 / 5 <i class="fa-solid fa-star text-yellow-400"></i></span>
                         <a href="recipe-1.html">
                             <img class="w-full h-48 object-cover rounded-lg brightness-75 hover:brightness-100 transition-all" src="https://www.kindernetz.de/sendungen/schmecksplosion/1605000762801%2Cimage-knet-2538~_v-1x1@2dL_-029cdd853d61a51824ed2ee643deeae504b065c1.jpg" />
                         </a>
@@ -61,11 +61,11 @@
                     <a href="recipe-1.html" class="text-2xl font-medium text-orange-600 hover:text-orange-400 transition-all truncate mt-5">Hamburger Recipe</a>
                     <div class="author-stats flex justify-between mt-5 mb-5 align-center items-center">
                         <div class="author flex flex-row items-center gap-3">
-                            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
+                            <img class="h-10 w-10 rounded-full z-0" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80">
                             <a href="#" class="font-medium text-orange-600 hover:text-orange-400 transition-all">Laura</a>
                         </div>
                         <div class="stats">
-                            <span class="text-gray-500">2k</span> <i class="heart fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe(this)"></i>
+                            <span class="text-gray-500">2k</span> <i class="heart relative fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500 z-30" onclick="likeRecipe(this)"></i>
                             <span class="text-gray-500">5k</span> <i class="bookmark fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe(this)"></i>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                         <div class="absolute w-10 h-10 bg-yellow-400 text-md text-orange-400 font-bold rounded-br-full pl-2.5 pt-1 z-10">
                             2
                         </div>
-                        <span class="absolute py-1 px-3 bg-gray-800 bg-opacity-70 text-zinc-50 text-sm font-bold rounded-full m-3 top-0 right-0 m-2 z-10">4.5 / 5 <i class="fa-solid fa-star text-yellow-400"></i></span>
+                        <span class="absolute py-1 px-3 bg-gray-800 bg-opacity-70 text-zinc-50 text-sm font-bold rounded-full m-3 top-0 right-0 z-10">4.5 / 5 <i class="fa-solid fa-star text-yellow-400"></i></span>
                         <a href="recipe-1.html">
                             <img class="w-full h-48 object-cover rounded-lg brightness-75 hover:brightness-100 transition-all" src="https://www.kindernetz.de/sendungen/schmecksplosion/1605000762801%2Cimage-knet-2538~_v-1x1@2dL_-029cdd853d61a51824ed2ee643deeae504b065c1.jpg" />
                         </a>
@@ -87,7 +87,7 @@
                             <a href="#" class="font-medium text-orange-600 hover:text-orange-400 transition-all">Laura</a>
                         </div>
                         <div class="stats">
-                            <span class="text-gray-500">2k</span> <i class="heart active fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500 z-30" onclick="likeRecipe(this)"></i>
+                            <span class="text-gray-500">2k</span> <i class="heart relative active fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500 z-30" onclick="likeRecipe(this)"></i>
                             <span class="text-gray-500">5k</span> <i class="bookmark fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe(this)"></i>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                         <div class="absolute w-10 h-10 bg-yellow-400 text-md text-orange-400 font-bold rounded-br-full pl-2.5 pt-1 z-10">
                             3
                         </div>
-                        <span class="absolute py-1 px-3 bg-gray-800 bg-opacity-70 text-zinc-50 text-sm font-bold rounded-full m-3 top-0 right-0 m-2 z-10">4.5 / 5 <i class="fa-solid fa-star text-yellow-400"></i></span>
+                        <span class="absolute py-1 px-3 bg-gray-800 bg-opacity-70 text-zinc-50 text-sm font-bold rounded-full m-3 top-0 right-0 z-10">4.5 / 5 <i class="fa-solid fa-star text-yellow-400"></i></span>
                         <a href="recipe-1.html">
                             <img class="w-full h-48 object-cover rounded-lg brightness-75 hover:brightness-100 transition-all" src="https://www.kindernetz.de/sendungen/schmecksplosion/1605000762801%2Cimage-knet-2538~_v-1x1@2dL_-029cdd853d61a51824ed2ee643deeae504b065c1.jpg" />
                         </a>
@@ -109,7 +109,7 @@
                             <a href="#" class="font-medium text-orange-600 hover:text-orange-400 transition-all">Laura</a>
                         </div>
                         <div class="stats">
-                            <span class="text-gray-500">2k</span> <i class="heart fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe(this)"></i>
+                            <span class="text-gray-500">2k</span> <i class="heart relative fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500 z-30" onclick="likeRecipe(this)"></i>
                             <span class="text-gray-500">5k</span> <i class="bookmark active fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe(this)"></i>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
                         <div class="absolute w-10 h-10 bg-yellow-400 text-md text-orange-400 font-bold rounded-br-full pl-2.5 pt-1 z-10">
                             4
                         </div>
-                        <span class="absolute py-1 px-3 bg-gray-800 bg-opacity-70 text-zinc-50 text-sm font-bold rounded-full m-3 top-0 right-0 m-2 z-10">4.5 / 5 <i class="fa-solid fa-star text-yellow-400"></i></span>
+                        <span class="absolute py-1 px-3 bg-gray-800 bg-opacity-70 text-zinc-50 text-sm font-bold rounded-full m-3 top-0 right-0 z-10">4.5 / 5 <i class="fa-solid fa-star text-yellow-400"></i></span>
                         <a href="recipe-1.html">
                             <img class="w-full h-48 object-cover rounded-lg brightness-75 hover:brightness-100 transition-all" src="https://www.kindernetz.de/sendungen/schmecksplosion/1605000762801%2Cimage-knet-2538~_v-1x1@2dL_-029cdd853d61a51824ed2ee643deeae504b065c1.jpg" />
                         </a>
@@ -131,7 +131,7 @@
                             <a href="#" class="font-medium text-orange-600 hover:text-orange-400 transition-all">Laura</a>
                         </div>
                         <div class="stats">
-                            <span class="text-gray-500">2k</span> <i class="heart fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500" onclick="likeRecipe(this)"></i>
+                            <span class="text-gray-500">2k</span> <i class="heart relative fa-solid fa-heart text-gray-500 mr-2 cursor-pointer hover:text-red-500 z-30" onclick="likeRecipe(this)"></i>
                             <span class="text-gray-500">5k</span> <i class="bookmark fa-solid fa-bookmark text-gray-500 cursor-pointer hover:text-blue-500" onclick="bookmarkRecipe(this)"></i>
                         </div>
                     </div>
@@ -248,7 +248,7 @@
             </div>
         </section>
     </main>
-    <footer class="bg-orange-200">
+    <footer>
         <div class="flex items-center justify-between text-indigo-1000 text-lg py-10 lg:px-24 md:px-10 sm:px-5 max-sm:px-5 lg:flex-row md:flex-col sm:flex-col max-sm:flex-col">
             <div class="flex gap-20 items-center lg:flex-row md:flex-col sm:flex-col max-sm:flex-col">
                 <h1 class="text-2xl font-bold">Bon Appetit</h1>
@@ -261,7 +261,7 @@
             </div>
            <div class="flex gap-3 items-center lg:flex-row md:flex-col sm:flex-col max-sm:flex-col">
                <p class="text-base font-medium">Subscribe to our newsletter</p>
-               <input type="text" placeholder="Your E-Mail" class="py-1 px-3 rounded-full placeholder:font-medium placeholder:text-slate-400 placeholder:italic">
+               <input type="text" placeholder="Your E-Mail" class="py-1 px-3 rounded-full border border-indigo-1000 placeholder:font-medium placeholder:text-slate-400 placeholder:italic">
                <button class="py-2 px-3 border border-indigo-1000 text-indigo-1000 rounded-full font-bold text-sm transition-all hover:bg-indigo-1000 hover:text-white"><i class="fa-solid fa-envelope"></i></button>
             </div>
         </div>
